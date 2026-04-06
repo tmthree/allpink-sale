@@ -1,0 +1,14 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "dev",
+      "runtimeExecutable": "/Users/tmthree/.nvm/versions/node/v22.22.2/bin/node",
+      "runtimeArgs": ["node_modules/.bin/next", "dev"],
+      "env": {
+        "PATH": "/Users/tmthree/.nvm/versions/node/v22.22.2/bin:/usr/local/bin:/usr/bin:/bin"
+      },
+      "port": 3000
+    }
+  ]
+}
