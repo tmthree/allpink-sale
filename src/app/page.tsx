@@ -58,8 +58,10 @@ export default function HomePage() {
             <span className="text-pink-600">PP · PE · HDPE</span>
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
-            Chuyên cung cấp hạt nhựa tái chế chất lượng cao. Thu mua phế liệu —
-            Xay hạt — Đóng bao — Giao hàng toàn quốc.
+            Chuyên cung cấp hạt nhựa tái chế chất lượng cao.
+          </p>
+          <p className="mx-auto mt-2 text-base text-gray-500">
+            Thu mua phế liệu — Xay hạt — Đóng bao — Giao hàng toàn quốc
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
             <Link
