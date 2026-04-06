@@ -4,7 +4,7 @@ export const SITE_CONFIG = {
   shortName: "AllPink",
   description:
     "Chuyên cung cấp hạt nhựa tái chế PP, PE, HDPE chất lượng cao. Thu mua, xay, đóng bao — giao hàng toàn quốc.",
-  url: "https://allpink.vercel.app", // Thay bằng domain thật sau
+  url: "https://www.nhuaallpink.io.vn",
 } as const;
 
 // Thông tin liên hệ — THAY BẰNG THÔNG TIN THẬT
