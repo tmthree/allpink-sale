@@ -96,38 +96,36 @@ export default async function ContactPage({ searchParams }: PageProps) {
             </div>
           </div>
 
-          {/* Bank info */}
-          <div className="rounded-2xl border bg-white p-6 shadow-sm space-y-3">
-            <div className="flex items-center gap-2">
-              <BuildingIcon className="size-5 text-gray-400" />
-              <h2 className="text-lg font-semibold text-gray-900">
-                Thông tin chuyển khoản
-              </h2>
+          {/* Bank info — hiện khi BANK_INFO có giá trị */}
+          {BANK_INFO && (
+            <div className="rounded-2xl border bg-white p-6 shadow-sm space-y-3">
+              <div className="flex items-center gap-2">
+                <BuildingIcon className="size-5 text-gray-400" />
+                <h2 className="text-lg font-semibold text-gray-900">
+                  Thông tin chuyển khoản
+                </h2>
+              </div>
+              <div className="space-y-2 text-sm">
+                <div className="flex justify-between">
+                  <span className="text-gray-500">Ngân hàng</span>
+                  <span className="font-medium">{BANK_INFO.bankName}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-500">Số tài khoản</span>
+                  <span className="font-mono font-semibold text-gray-900">
+                    {BANK_INFO.accountNumber}
+                  </span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-500">Chủ tài khoản</span>
+                  <span className="font-medium">{BANK_INFO.accountHolder}</span>
+                </div>
+              </div>
+              <p className="text-xs text-gray-400 pt-1">
+                * Nội dung CK: Tên + SĐT + Sản phẩm
+              </p>
             </div>
-            <div className="space-y-2 text-sm">
-              <div className="flex justify-between">
-                <span className="text-gray-500">Ngân hàng</span>
-                <span className="font-medium">{BANK_INFO.bankName}</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-gray-500">Số tài khoản</span>
-                <span className="font-mono font-semibold text-gray-900">
-                  {BANK_INFO.accountNumber}
-                </span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-gray-500">Chủ tài khoản</span>
-                <span className="font-medium">{BANK_INFO.accountHolder}</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-gray-500">Chi nhánh</span>
-                <span className="font-medium">{BANK_INFO.branch}</span>
-              </div>
-            </div>
-            <p className="text-xs text-gray-400 pt-1">
-              * Nội dung CK: Tên + SĐT + Sản phẩm
-            </p>
-          </div>
+          )}
         </div>
       </div>
     </div>

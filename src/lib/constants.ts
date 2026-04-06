@@ -7,22 +7,22 @@ export const SITE_CONFIG = {
   url: "https://www.nhuaallpink.io.vn",
 } as const;
 
-// Thông tin liên hệ — THAY BẰNG THÔNG TIN THẬT
+// Thông tin liên hệ
 export const CONTACT_INFO = {
-  phone: "0901234567",
-  zalo: "0901234567",
-  email: "lienhe@allpink.vn",
-  address: "123 Đường ABC, Quận XYZ, TP. Hồ Chí Minh",
+  phone: "0908244202",
+  zalo: "0908244202",
+  email: "",
+  address: "23 Đ. Tân Xuân, Xã Bà Điểm, Hồ Chí Minh, Việt Nam",
   workingHours: "Thứ 2 - Thứ 7: 7:00 - 17:00",
 } as const;
 
-// Thông tin ngân hàng — THAY BẰNG THÔNG TIN THẬT
-export const BANK_INFO = {
-  bankName: "Ngân hàng BIDV",
-  accountNumber: "1234567890",
-  accountHolder: "NGUYEN VAN A",
-  branch: "Chi nhánh XYZ",
-} as const;
+// Thông tin ngân hàng — bổ sung sau khi có
+// Set giá trị { bankName, accountNumber, accountHolder } khi muốn hiện trên web
+export const BANK_INFO: {
+  bankName: string;
+  accountNumber: string;
+  accountHolder: string;
+} | null = null;
 
 // Zalo link
 export const ZALO_LINK = `https://zalo.me/${CONTACT_INFO.zalo}`;

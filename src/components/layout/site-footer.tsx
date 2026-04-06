@@ -69,23 +69,26 @@ export function SiteFooter() {
               </div>
             </div>
 
-            <Separator className="bg-gray-700" />
-
-            <div className="space-y-2">
-              <div className="flex items-center gap-2 text-sm">
-                <BuildingIcon className="size-4 shrink-0 text-pink-400" />
-                <span className="font-medium text-white">{BANK_INFO.bankName}</span>
-              </div>
-              <p className="text-sm pl-6">
-                STK:{" "}
-                <span className="font-mono text-white">
-                  {BANK_INFO.accountNumber}
-                </span>
-              </p>
-              <p className="text-sm pl-6 text-gray-400">
-                {BANK_INFO.accountHolder}
-              </p>
-            </div>
+            {BANK_INFO && (
+              <>
+                <Separator className="bg-gray-700" />
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-sm">
+                    <BuildingIcon className="size-4 shrink-0 text-pink-400" />
+                    <span className="font-medium text-white">{BANK_INFO.bankName}</span>
+                  </div>
+                  <p className="text-sm pl-6">
+                    STK:{" "}
+                    <span className="font-mono text-white">
+                      {BANK_INFO.accountNumber}
+                    </span>
+                  </p>
+                  <p className="text-sm pl-6 text-gray-400">
+                    {BANK_INFO.accountHolder}
+                  </p>
+                </div>
+              </>
+            )}
           </div>
         </div>
       </div>
